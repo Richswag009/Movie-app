@@ -89,7 +89,7 @@ const Home = () => {
 
   //
   return (
-    <section className="container mx-auto my-10 items-center">
+    <section className="container mx-auto items-center">
       <Header
         searchValue={searchValue}
         onFilterGenre={filterGenre}
@@ -99,7 +99,7 @@ const Home = () => {
         onSetFilterYear={setFilterYear}
       />
 
-      <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 gap-y-1 items-center ">
+      <div className=" my-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 gap-y-1 items-center ">
         {!isLoading && allMovies}
         {isLoading && <p className="text-3xl ">Loading......</p>}
         {/* <p>{!isLoading && error & <p>{error}</p>}</p> */}
