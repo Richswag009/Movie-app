@@ -89,7 +89,7 @@ const Home = () => {
 
   //
   return (
-    <section className="container mx-auto items-center">
+    <section className="container mx-auto my-10 items-center">
       <Header
         searchValue={searchValue}
         onFilterGenre={filterGenre}
@@ -104,7 +104,6 @@ const Home = () => {
         {isLoading && <p className="text-3xl ">Loading......</p>}
         {/* <p>{!isLoading && error & <p>{error}</p>}</p> */}
       </div>
-      <h1>loading</h1>
     </section>
   );
 };
