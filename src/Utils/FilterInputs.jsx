@@ -10,7 +10,7 @@ const FilterInputs = ({ onFilterGenre, onSetFilterGenre }) => {
       onChange={(e) => onSetFilterGenre(e.target.value)}
     >
       <option className="bg-red" value="">
-        filter by Genre
+        Filter By Genre
       </option>
       <option value="28">Action & Adventure</option>
       <option value="12">Adventure</option>

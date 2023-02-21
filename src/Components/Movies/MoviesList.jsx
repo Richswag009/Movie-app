@@ -16,24 +16,19 @@ const MoviesList = ({ movie, genreList, loading }) => {
       })
     : [];
 
-  // const generesName =
-  //   genreList.map((genres) => {
-  //     return genres.name;
-  //   }) ?? [];
-
   return (
     <Card>
       <img
         src={`${baseUrl}${movie?.backdrop_path || movie.poster_path} `}
-        alt={movie?.title || movie.original_title || movie.original_name}
+        alt={movie?.title || movie?.original_title || movie?.original_name}
         className="w-full h-42 transition-all transform hover:scale-95 delay-300 duration-300 ease-in-out"
       />
       <div className="p-3 mb-5  overflow-auto w-full">
-        <h1 className="font-bold text-md ">
-          {movie?.title || movie.original_title || movie.original_name}
+        <h1 className="font-bold text-md leading-tight py-1 ">
+          {movie?.title || movie?.original_title || movie?.original_name}
         </h1>
 
-        <p className="text-sm font-bold">
+        <p className="text-sm font-bold ">
           Genres:
           <em className="font-normal">
             {genereNames &&
@@ -46,7 +41,7 @@ const MoviesList = ({ movie, genreList, loading }) => {
           </em>
         </p>
 
-        <p className="text-sm font-bold my-2">
+        <p className="text-sm font-bold ">
           Overview :{" "}
           <em className="font-normal">{truncate(movie.overview, 200)}</em>
         </p>
