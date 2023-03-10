@@ -23,3 +23,20 @@ some of the functionlitie of the app includes: a user can search for its favorit
 # Link to project
 
 [https://riches-movie-app.netlify.app/]
+
+
+# Usage
+ npm install
+ cd movie-app2 npm install
+ cd ..
+ 
+ # Run front
+ npm run dev
+
+ 
+ # Build client
+ cd movie-app2
+ npm run build
+ 
+ # Prod
+ npm start
