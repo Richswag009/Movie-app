@@ -26,9 +26,11 @@ some of the functionlitie of the app includes: a user can search for its favorit
 
 
 # Usage
+ git clone
+ cd folder
  npm install
- cd movie-app2 npm install
- cd ..
+
+
  
  # Run front
  npm run dev
